@@ -7,7 +7,7 @@
 **Recorte:** bairro da Mooca, São Paulo/SP.  
 **Prazo informado pela equipe:** 19/11/2026. **Meta interna:** 16/11/2026.  
 **Repositório:** https://github.com/VitorPDB/GS-eng-software  
-**Protótipo publicado:** PENDENTE — inserir endereço público após publicação e teste anônimo.  
+**Protótipo publicado:** https://vitorpdb.github.io/GS-eng-software/  
 **Vídeo de demonstração:** PENDENTE — inserir endereço após gravação, com acesso público ou não listado.
 
 Documento técnico do protótipo acadêmico. Todos os eventos, sensores, bases e registros demonstrados são fictícios. A aplicação não é um serviço operacional de emergência. Os nomes de fontes devem indicar simulação e não sugerir integração com órgãos reais.
@@ -164,7 +164,7 @@ As metas numéricas são propostas de projeto e precisam de evidência de mediç
 | Infraestrutura/dados | Ler e escrever estado da demonstração | Repositório com `localStorage`, contingência em memória e dados iniciais simulados (`seed`) |
 | Fontes externas representadas | Ilustrar entradas previstas no tema | Sensor simulado, base pública simulada e comunidade fictícia; não existem conectores reais |
 
-O ponto de composição cria o repositório e o injeta na aplicação. O domínio não importa a infraestrutura. O repositório abstrai a persistência necessária ao protótipo, evitando adicionar servidor ou banco apenas para demonstrar navegação.
+O ponto de composição na apresentação cria o repositório e injeta `repository`, `seedFactory` e `clock` na aplicação. Aplicação e domínio não importam a infraestrutura. O repositório abstrai a persistência necessária ao protótipo, evitando adicionar servidor ou banco apenas para demonstrar navegação.
 
 A organização usa separação em camadas e responsabilidades próximas de MVC: as views apresentam, o controlador recebe ações e o modelo é expresso por domínio e aplicação. A injeção do repositório cria um limite compatível com princípios de Clean/Hexagonal, sem afirmar que o protótipo implementa integralmente esses estilos. Os conceitos são aplicados como decisões do projeto; não se alega reprodução literal de material de aula não consultado.
 
@@ -256,7 +256,7 @@ Os identificadores de cenários abaixo descrevem **verificações planejadas**. 
 
 O diagrama de sequência deve representar a fonte simulada ou o morador, a apresentação, a aplicação, as regras de domínio e o repositório. Deve mostrar recebimento, validação, classificação, persistência e publicação com notificação interna; condições inválidas precisam ser identificadas. Não incluir SMS, integração real ou fila como se estivessem implementados.
 
-O diagrama de estados deve reproduzir RB05, incluindo guardas de confirmação e publicação, o caminho de risco baixo e o descarte com motivo. A visão de arquitetura deve distinguir as quatro camadas implementadas e as fontes externas apenas representadas. Os diagramas finais serão incorporados ao PDF único; este arquivo não substitui sua entrega visual.
+O diagrama de estados deve reproduzir RB05, incluindo guardas de confirmação e publicação, o caminho de risco baixo e o descarte com motivo. A visão de arquitetura deve distinguir as quatro camadas implementadas e as fontes externas apenas representadas. O PDF único incorpora os diagramas visuais; esta descrição textual não substitui sua entrega visual. Fontes editáveis PlantUML e diagramas SVG estão em `docs/diagramas`.
 
 ## 9. Backlog e organização da entrega
 
@@ -275,7 +275,7 @@ O diagrama de estados deve reproduzir RB05, incluindo guardas de confirmação e
 | 06–08 | Fechar recorte, regras, arquitetura e oito telas |
 | 09–11 | Concluir fluxo principal e persistência local; preparar diagramas |
 | 12–13 | Executar verificações, ajustar acessibilidade e revisar rastreabilidade |
-| 14–15 | Consolidar PDF, publicar protótipo e gravar vídeo |
+| 14–15 | Consolidar PDF, gravar vídeo e testar link final após revisão |
 | 16 | Meta interna: pacote revisado e links testados |
 | 17–18 | Reserva para correções finais |
 | 19 | Prazo informado: envio por um integrante no Teams, em nome do grupo |

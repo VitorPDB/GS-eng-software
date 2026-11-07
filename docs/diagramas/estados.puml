@@ -6,13 +6,11 @@ reportado --> em_validacao : iniciar conferência / motivo
 reportado --> descartado : descartar [motivo preenchido]
 em_validacao --> descartado : descartar [motivo preenchido]
 em_validacao --> confirmado : confirmar [motivo e fonte fresca] / verified=true
-confirmado --> alerta_emitido : publicar [fonte fresca e confiança>=50 e risco moderado/alto]
-/ notificação interna única
+confirmado --> alerta_emitido : publicar [fonte fresca e confiança>=50 e risco moderado/alto]\n/ notificação interna única
 confirmado --> em_monitoramento : acompanhar [risco baixo] / motivo
 alerta_emitido --> em_monitoramento : acompanhar / motivo
 em_monitoramento --> encerrado : encerrar / motivo
 descartado --> [*]
 encerrado --> [*]
-note bottom: Outras transições são recusadas. Fresca: idade entre 0 e 30 minutos, inclusive.
-Todo o cenário e o perfil do agente são demonstrativos.
+note bottom of descartado: Outras transições são recusadas. Fresca: idade entre 0 e 30 minutos, inclusive.\nTodo o cenário e o perfil do agente são demonstrativos.
 @enduml

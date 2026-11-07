@@ -16,14 +16,13 @@ else entrada válida
 D --> APP: dados válidos
 APP -> R: save(reportado, fonte comunidade)
 APP --> UI: protocolo e confiança inicial
-end
 G -> UI: iniciar validação + motivo
 UI -> APP: transition(em_validacao, motivo)
 APP -> D: validateTransition(...)
 APP -> R: save(estado, histórico)
 opt adicionar evidência simulada
 G -> UI: adicionar sensor/base fictícios
-UI -> APP: addDemoSource(tipo)
+UI -> APP: addDemoEvidence(id)
 APP -> R: save(fontes fictícias)
 end
 G -> UI: confirmar + motivo
@@ -39,6 +38,7 @@ APP -> R: save(evento + notificação + histórico)
 APP --> UI: alerta e central atualizados
 else condição não atendida
 APP --> UI: informar bloqueio sem alterar estado
+end
 end
 note over F,R: Dados simulados; sem API externa, SMS, e-mail ou autenticação real.
 @enduml

@@ -34,11 +34,15 @@ Foram inspecionadas capturas da visão geral em 1440 px e 390 px, da origem/conf
 
 Notas independentes para o pacote de escopo revisado: Arquiteto 5; QA 5 após correções; UX 5; Gerente Acadêmico 5; Inovação 5. Média aritmética **5,0**, superior ao corte de 4,5. As notas expressam pareceres de projeto; não preveem nota da instituição nem substituem as verificações acima.
 
+## Publicação
+
+Repositório publicado em https://github.com/VitorPDB/GS-eng-software. GitHub Pages confirmou estado `built`; a URL https://vitorpdb.github.io/GS-eng-software/ foi aberta em um navegador sem sessão autenticada do GitHub. A página exibiu painel, três notificações iniciais, fontes fictícias e links dos fluxos. Esse teste confirma acesso público ao protótipo, sem afirmar que um vídeo ainda não gravado foi verificado.
+
 ## Limites e pendências
 
 - RNF01: a meta de atualização em até um segundo com cem registros e vinte medições ainda não tem relatório de desempenho específico.
 - RNF02/RNF03: disponibilidade de produção e ingestão escalável são metas futuras, não medidas no protótipo.
 - A inspeção visual e os estilos de foco não substituem uma auditoria completa de teclado, leitor de tela e contraste de todos os estados.
 - Autenticação e autorização reais não fazem parte desta demonstração.
-- A revisão do PDF e dos diagramas deve ser registrada junto da versão consolidada.
-- Publicação, teste público em janela anônima e gravação do vídeo devem ser conferidos antes do envio.
+- O PDF foi renderizado e revisado visualmente; diagramas em SVG foram conferidos. As fontes PlantUML são editáveis e não foram compiladas por um runtime PlantUML nesta sessão.
+- A gravação, publicação e verificação do vídeo ainda estão pendentes. Após inserir seu link na capa, revisar o PDF e o acesso final antes de enviar.

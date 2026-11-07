@@ -5,21 +5,16 @@ package "Fontes representadas - simuladas" {
   component "Sensor e base pública fictícios" as Sources
 }
 package "Apresentação" {
-  component "app.js: UI/controller + views
-T01-T08; composição" as UI
+  component "app.js: UI/controller + views\nT01-T08; composição" as UI
 }
 package "Aplicação" {
-  component "Platform: casos de uso
-registro, validação, publicação
-notificação interna e histórico" as App
+  component "Platform: casos de uso\nregistro, validação, publicação\nnotificação interna e histórico" as App
 }
 package "Domínio" {
-  component "Rules: risco, confiança, frescor
-transições e validações" as Rules
+  component "Rules: risco, confiança, frescor\ntransições e validações" as Rules
 }
 package "Infraestrutura / dados" {
-  database "Repository: localStorage
-contingência em memória" as Repo
+  database "Repository: localStorage\ncontingência em memória" as Repo
   component "seedFactory: fontes e eventos fictícios" as Seed
 }
 Community --> UI : entrada demonstrativa
@@ -30,12 +25,9 @@ UI ..> Seed : injeta seedFactory
 App --> Rules : regras
 App --> Repo : contrato injetado load/save
 App --> Seed : função injetada
-note right of Rules: Domínio sem DOM ou armazenamento.
-Aplicação sem importar infraestrutura.
-note bottom of Repo: Minimização: localização aproximada e sem identidade do relator.
-Nenhuma integração urbana real ou canal externo de notificação.
+note right of Rules: Domínio sem DOM ou armazenamento.\nAplicação sem importar infraestrutura.
+note bottom of Repo: Minimização: localização aproximada e sem identidade do relator.\nNenhuma integração urbana real ou canal externo de notificação.
 package "Evolução futura - não implementada" {
-  component "API, autenticação/autorização, banco,
-monitoramento e fila conforme necessidade" as Future
+  component "API, autenticação/autorização, banco,\nmonitoramento e fila conforme necessidade" as Future
 }
 @enduml

@@ -15,6 +15,10 @@ test('valida campos, enums e inteiros sem criar ocorrência inválida', () => {
   assert.equal(app.listEvents().length, initial);
   const event = app.createReport(input);
   assert.equal(event.state, 'reportado'); assert.equal(event.confidence.score, 30); assert.equal(event.severity, 'alto');
+  for (const [impact, urgency, expected] of [[1,1,'baixo'],[1,2,'moderado'],[2,2,'moderado'],[2,3,'alto'],[3,3,'alto']]) {
+    assert.equal(calculateEvent({...event,impact,urgency},DEMO_NOW).severity,expected);
+  }
+  for (const impact of [0,4,-1]) assert.throws(()=>app.createReport({...input,impact}));
 });
 
 test('confiança usa tipos distintos e fontes recentes; janela inclui limite e exclui futuro', () => {
@@ -28,6 +32,8 @@ test('confiança usa tipos distintos e fontes recentes; janela inclui limite e e
   assert.equal(calculateEvent(base, DEMO_NOW).confidence.score, 30);
   assert.equal(calculateEvent(base, new Date(Date.parse(DEMO_NOW) + FRESH_WINDOW_MS).toISOString()).stale, false);
   assert.equal(calculateEvent(base, new Date(Date.parse(DEMO_NOW) - 1).toISOString()).confidence.score, 0);
+  assert.equal(calculateEvent(base,new Date(Date.parse(DEMO_NOW)+31*60*1000).toISOString()).stale,true);
+  assert.equal(calculateEvent({...base,sources:[{...source,observedAt:'horário inválido'}]},DEMO_NOW).confidence.score,0);
 });
 
 test('fluxo completo publica exatamente uma notificação e encerramento não publica', () => {

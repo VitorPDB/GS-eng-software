@@ -75,7 +75,7 @@ def arrow(d, pts, text=None, lx=None, ly=None, dashed=False, size=8):
     d.add(Polygon([x2,y2,x2-6*cos(a-.45),y2-6*sin(a-.45),x2-6*cos(a+.45),y2-6*sin(a+.45)],fillColor=TEAL,strokeColor=TEAL))
     if text: label(d,lx,ly,text,size)
 
-SEQUENCE_PUML = '''@startuml
+SEQUENCE_PUML = r'''@startuml
 title Radar da Mooca - sequência do alerta simulado
 actor "Fonte simulada / Morador" as F
 actor "Agente (perfil demonstrativo)" as G
@@ -93,14 +93,13 @@ else entrada válida
 D --> APP: dados válidos
 APP -> R: save(reportado, fonte comunidade)
 APP --> UI: protocolo e confiança inicial
-end
 G -> UI: iniciar validação + motivo
 UI -> APP: transition(em_validacao, motivo)
 APP -> D: validateTransition(...)
 APP -> R: save(estado, histórico)
 opt adicionar evidência simulada
 G -> UI: adicionar sensor/base fictícios
-UI -> APP: addDemoSource(tipo)
+UI -> APP: addDemoEvidence(id)
 APP -> R: save(fontes fictícias)
 end
 G -> UI: confirmar + motivo
@@ -117,11 +116,12 @@ APP --> UI: alerta e central atualizados
 else condição não atendida
 APP --> UI: informar bloqueio sem alterar estado
 end
+end
 note over F,R: Dados simulados; sem API externa, SMS, e-mail ou autenticação real.
 @enduml
 '''
 
-STATES_PUML = '''@startuml
+STATES_PUML = r'''@startuml
 title Radar da Mooca - ciclo do evento
 hide empty description
 [*] --> reportado : registrar relato válido
@@ -135,11 +135,11 @@ alerta_emitido --> em_monitoramento : acompanhar / motivo
 em_monitoramento --> encerrado : encerrar / motivo
 descartado --> [*]
 encerrado --> [*]
-note bottom: Outras transições são recusadas. Fresca: idade entre 0 e 30 minutos, inclusive.\nTodo o cenário e o perfil do agente são demonstrativos.
+note bottom of descartado: Outras transições são recusadas. Fresca: idade entre 0 e 30 minutos, inclusive.\nTodo o cenário e o perfil do agente são demonstrativos.
 @enduml
 '''
 
-ARCH_PUML = '''@startuml
+ARCH_PUML = r'''@startuml
 title Radar da Mooca - arquitetura implementada
 package "Fontes representadas - simuladas" {
   component "Comunidade fictícia" as Community
@@ -186,11 +186,11 @@ def sequence():
     msg(2,3,76,'2. createReport(input)')
     msg(3,4,95,'3. validateReport')
     # Combined fragment with two clearly labelled operands.
-    d.add(Rect(282,d.height-181,465,76,fillColor=None,strokeColor=MUTED,strokeWidth=.8))
-    label(d,288,116,'alt [entrada inválida]',7.4,'start',True)
+    d.add(Rect(150,d.height-416,597,311,fillColor=None,strokeColor=MUTED,strokeWidth=.8))
+    label(d,156,116,'alt [entrada inválida]',7.4,'start',True)
     msg(4,3,133,'erro',True); msg(3,2,148,'exibir erro; sem gravar',True)
-    d.add(Line(282,d.height-155,747,d.height-155,strokeColor=MUTED,strokeWidth=.6,strokeDashArray=[3,2]))
-    label(d,288,166,'[entrada válida]',7.4,'start',True)
+    d.add(Line(150,d.height-155,747,d.height-155,strokeColor=MUTED,strokeWidth=.6,strokeDashArray=[3,2]))
+    label(d,156,166,'[entrada válida]',7.4,'start',True)
     msg(3,5,178,'4. save(reportado + fonte + histórico)')
     msg(3,2,197,'5. protocolo + confiança inicial',True)
     msg(1,2,216,'6. iniciar validação + motivo')
@@ -198,7 +198,7 @@ def sequence():
     msg(3,4,254,'validar transição')
     msg(3,5,273,'save(estado + histórico)')
     msg(1,2,292,'7. fonte fictícia opcional')
-    msg(2,3,311,'addDemoSource(tipo)')
+    msg(2,3,311,'addDemoEvidence(id)')
     msg(3,5,330,'save(fonte simulada)')
     msg(1,2,349,'8. confirmar + motivo')
     msg(2,3,368,'transition(confirmado)')
@@ -328,7 +328,7 @@ def build():
     title=ParagraphStyle('cover',fontName='Arial-Bold',fontSize=36,leading=41,textColor=TEAL,spaceAfter=22)
     story=[Spacer(1,48),p('GLOBAL SOLUTION 2026.2 · CITIZENTECH','small'),Paragraph('Radar<br/>da Mooca',title),p('Urban Risk Intelligence Platform','h2'),p('Engenharia de Software · Documentação técnica e protótipo acadêmico'),Spacer(1,15),p('**VERSÃO PARA REVISÃO**'),p('Dados, fontes, eventos e perfis demonstrativos. Bairro da Mooca, São Paulo/SP.'),Spacer(1,18)]
     for name,rm in [('Lucas Zolla Assis','557952'),('Lucas Baraldi Rodrigues','555407'),('Vitor Pantarotto de Brito','554961')]: story.append(p(f'**{name}** · RM {rm}'))
-    story += [Spacer(1,18),p('Prazo informado: **19/11/2026** · Meta interna: **16/11/2026**'),p('Repositório: [VitorPDB/GS-eng-software](https://github.com/VitorPDB/GS-eng-software)'),p('Protótipo: **publicação pendente**'),p('Vídeo: **gravação pendente**'),Spacer(1,12),p('O protótipo não é um serviço operacional de emergência. Fontes fictícias não representam integração com órgãos reais. Metas futuras de produção são distinguidas das capacidades demonstradas.','small'),PageBreak()]
+    story += [Spacer(1,18),p('Prazo informado: **19/11/2026** · Meta interna: **16/11/2026**'),p('Repositório: [VitorPDB/GS-eng-software](https://github.com/VitorPDB/GS-eng-software)'),p('Protótipo: [vitorpdb.github.io/GS-eng-software](https://vitorpdb.github.io/GS-eng-software/)'),p('Vídeo: **gravação pendente**'),Spacer(1,12),p('O protótipo não é um serviço operacional de emergência. Fontes fictícias não representam integração com órgãos reais. Metas futuras de produção são distinguidas das capacidades demonstradas.','small'),PageBreak()]
     text=(DOCS/'especificacao.md').read_text(encoding='utf-8')
     text=text[text.index('## 1. Problema'):]
     story += markdown(text,pw-84)
@@ -337,7 +337,7 @@ def build():
     for i,((name,d),(heading,caption)) in enumerate(zip(diagrams,captions)):
         if i: story.append(PageBreak())
         story += [p(heading,'h2'),p(caption,'small'),d]
-    story += [NextPageTemplate('portrait'),PageBreak(),p('11. Verificação e fontes','h1'),p('Esta versão reúne documentação e diagramas para revisão. A equipe deve conferir o registro de resultados da versão final antes de assinalar requisitos como atendidos. O checklist deste pacote mantém verificações e pendências explícitas.'),p('Evidências existentes no trabalho local incluem a jornada de navegador registrada em work/qa/browser-results.json e capturas das oito telas em larguras de 360 e 1280 px. Isso não comprova disponibilidade ou escalabilidade de produção. A bateria de testes automatizados e o relatório final ainda devem ser consolidados no fechamento da entrega.'),p('Pendências de fechamento','h2'),p('Publicar o protótipo, gravar o vídeo, substituir os links pendentes na capa e executar a conferência final de acesso anônimo. Revisar o PDF após qualquer mudança relevante de comportamento.'),p('Referências','h2'),p('ISO. [ISO/IEC 25010:2023 - Product quality model](https://www.iso.org/standard/78176.html). Referência do modelo de qualidade; edição 2023 com nove características. Consulta: 06/11/2026.'),p('MARTIN, Robert C. [The Clean Architecture](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html), 13/08/2012. Referência para direção de dependências e separação de regras. O protótipo aplica princípios e não reivindica implementação integral do estilo.'),p('Enunciado da disciplina: sete imagens fornecidas pela equipe nesta conversa. Os critérios e regras acadêmicas foram extraídos dessas imagens; as fórmulas e metas do projeto são propostas próprias.'),NextPageTemplate('landscape'),PageBreak(),p('12. Roteiro do vídeo - duração alvo: 2min50s','h2'),p('Restaurar dados fictícios antes de gravar. Usar impacto 3 e urgência 2; fonte comunitária fresca gera confiança 30 e validação eleva a 70. Relógio fixo: 06/11/2026, 14h30, São Paulo. Limite final: três minutos.','small')]
+    story += [NextPageTemplate('portrait'),PageBreak(),p('11. Verificação e fontes','h1'),p('Esta versão reúne documentação e diagramas para revisão. A equipe deve conferir o registro de resultados da versão final antes de assinalar requisitos como atendidos. O checklist deste pacote mantém verificações e pendências explícitas.'),p('O registro docs/verificacao-qa.md informa 15 testes automatizados aprovados, zero falhas, com cobertura de domínio e apresentação. A jornada no navegador concluiu registro, validação, adição de evidências fictícias, publicação, monitoramento, encerramento e leitura de notificação com persistência. Foram visitadas oito telas a 360 e 1280 px: zero erros JavaScript capturados e nenhuma rolagem horizontal da página nas combinações verificadas. A navegação móvel pode ter rolagem interna intencional. Esses resultados não comprovam desempenho com 100 eventos, disponibilidade ou escalabilidade de produção, nem auditoria completa de acessibilidade. O relatório de QA descreve os limites e evidências da versão local.'),p('Pendências de fechamento','h2'),p('O protótipo foi publicado em https://vitorpdb.github.io/GS-eng-software/. Gravar o vídeo e testar o link final após revisão. Inserir o endereço do vídeo na capa; o trio deve revisar e compreender o pacote antes do envio no Teams. Revisar o PDF após qualquer mudança relevante de comportamento.'),p('Referências','h2'),p('ISO. [ISO/IEC 25010:2023 - Product quality model](https://www.iso.org/standard/78176.html). Referência do modelo de qualidade; edição 2023 com nove características. Consulta: 06/11/2026.'),p('MARTIN, Robert C. [The Clean Architecture](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html), 13/08/2012. Referência para direção de dependências e separação de regras. O protótipo aplica princípios e não reivindica implementação integral do estilo.'),p('Enunciado da disciplina: sete imagens fornecidas pela equipe nesta conversa. Os critérios e regras acadêmicas foram extraídos dessas imagens; as fórmulas e metas do projeto são propostas próprias.'),NextPageTemplate('landscape'),PageBreak(),p('12. Roteiro do vídeo - duração alvo: 2min50s','h2'),p('Restaurar dados fictícios antes de gravar. Usar impacto 3 e urgência 2; fonte comunitária fresca gera confiança 30 e validação eleva a 70. Relógio fixo: 06/11/2026, 14h30, São Paulo. Limite final: três minutos.','small')]
     video=(DOCS/'roteiro-video.md').read_text(encoding='utf-8')
     video=video.split('## Percurso e narração sugerida',1)[1].split('## Conferência antes de publicar',1)[0]
     story += markdown(video,lw-82)

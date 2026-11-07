@@ -1,0 +1,347 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-07T00:13:03.925280+00:00",
+  "title": "Design System: Radar da Mooca",
+  "extensions": {
+    "colorMeta": {
+      "ink": {
+        "role": "primary",
+        "displayName": "Ink",
+        "tonalRamp": [
+          "oklch(15% 0.04396 214.14)",
+          "oklch(26% 0.04396 214.14)",
+          "oklch(38% 0.04396 214.14)",
+          "oklch(49% 0.04396 214.14)",
+          "oklch(61% 0.04396 214.14)",
+          "oklch(72% 0.04396 214.14)",
+          "oklch(84% 0.04396 214.14)",
+          "oklch(95% 0.04396 214.14)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Muted",
+        "tonalRamp": [
+          "oklch(15% 0.02487 218.93)",
+          "oklch(26% 0.02487 218.93)",
+          "oklch(38% 0.02487 218.93)",
+          "oklch(49% 0.02487 218.93)",
+          "oklch(61% 0.02487 218.93)",
+          "oklch(72% 0.02487 218.93)",
+          "oklch(84% 0.02487 218.93)",
+          "oklch(95% 0.02487 218.93)"
+        ]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Paper",
+        "tonalRamp": [
+          "oklch(15% 0.00539 117.92)",
+          "oklch(26% 0.00539 117.92)",
+          "oklch(38% 0.00539 117.92)",
+          "oklch(49% 0.00539 117.92)",
+          "oklch(61% 0.00539 117.92)",
+          "oklch(72% 0.00539 117.92)",
+          "oklch(84% 0.00539 117.92)",
+          "oklch(95% 0.00539 117.92)"
+        ]
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Surface",
+        "tonalRamp": [
+          "oklch(15% 0.00000 89.88)",
+          "oklch(26% 0.00000 89.88)",
+          "oklch(38% 0.00000 89.88)",
+          "oklch(49% 0.00000 89.88)",
+          "oklch(61% 0.00000 89.88)",
+          "oklch(72% 0.00000 89.88)",
+          "oklch(84% 0.00000 89.88)",
+          "oklch(95% 0.00000 89.88)"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Line",
+        "tonalRamp": [
+          "oklch(15% 0.01050 174.24)",
+          "oklch(26% 0.01050 174.24)",
+          "oklch(38% 0.01050 174.24)",
+          "oklch(49% 0.01050 174.24)",
+          "oklch(61% 0.01050 174.24)",
+          "oklch(72% 0.01050 174.24)",
+          "oklch(84% 0.01050 174.24)",
+          "oklch(95% 0.01050 174.24)"
+        ]
+      },
+      "accent": {
+        "role": "primary",
+        "displayName": "Accent",
+        "tonalRamp": [
+          "oklch(15% 0.15002 36.33)",
+          "oklch(26% 0.15002 36.33)",
+          "oklch(38% 0.15002 36.33)",
+          "oklch(49% 0.15002 36.33)",
+          "oklch(61% 0.15002 36.33)",
+          "oklch(72% 0.15002 36.33)",
+          "oklch(84% 0.15002 36.33)",
+          "oklch(95% 0.15002 36.33)"
+        ]
+      },
+      "accent-hover": {
+        "role": "primary",
+        "displayName": "Accent Hover",
+        "tonalRamp": [
+          "oklch(15% 0.13087 35.42)",
+          "oklch(26% 0.13087 35.42)",
+          "oklch(38% 0.13087 35.42)",
+          "oklch(49% 0.13087 35.42)",
+          "oklch(61% 0.13087 35.42)",
+          "oklch(72% 0.13087 35.42)",
+          "oklch(84% 0.13087 35.42)",
+          "oklch(95% 0.13087 35.42)"
+        ]
+      },
+      "soft": {
+        "role": "neutral",
+        "displayName": "Soft",
+        "tonalRamp": [
+          "oklch(15% 0.00830 157.09)",
+          "oklch(26% 0.00830 157.09)",
+          "oklch(38% 0.00830 157.09)",
+          "oklch(49% 0.00830 157.09)",
+          "oklch(61% 0.00830 157.09)",
+          "oklch(72% 0.00830 157.09)",
+          "oklch(84% 0.00830 157.09)",
+          "oklch(95% 0.00830 157.09)"
+        ]
+      },
+      "high": {
+        "role": "secondary",
+        "displayName": "High",
+        "tonalRamp": [
+          "oklch(15% 0.15844 27.66)",
+          "oklch(26% 0.15844 27.66)",
+          "oklch(38% 0.15844 27.66)",
+          "oklch(49% 0.15844 27.66)",
+          "oklch(61% 0.15844 27.66)",
+          "oklch(72% 0.15844 27.66)",
+          "oklch(84% 0.15844 27.66)",
+          "oklch(95% 0.15844 27.66)"
+        ]
+      },
+      "high-bg": {
+        "role": "secondary",
+        "displayName": "High Bg",
+        "tonalRamp": [
+          "oklch(15% 0.01934 33.37)",
+          "oklch(26% 0.01934 33.37)",
+          "oklch(38% 0.01934 33.37)",
+          "oklch(49% 0.01934 33.37)",
+          "oklch(61% 0.01934 33.37)",
+          "oklch(72% 0.01934 33.37)",
+          "oklch(84% 0.01934 33.37)",
+          "oklch(95% 0.01934 33.37)"
+        ]
+      },
+      "medium": {
+        "role": "secondary",
+        "displayName": "Medium",
+        "tonalRamp": [
+          "oklch(15% 0.09201 73.22)",
+          "oklch(26% 0.09201 73.22)",
+          "oklch(38% 0.09201 73.22)",
+          "oklch(49% 0.09201 73.22)",
+          "oklch(61% 0.09201 73.22)",
+          "oklch(72% 0.09201 73.22)",
+          "oklch(84% 0.09201 73.22)",
+          "oklch(95% 0.09201 73.22)"
+        ]
+      },
+      "medium-bg": {
+        "role": "secondary",
+        "displayName": "Medium Bg",
+        "tonalRamp": [
+          "oklch(15% 0.03487 87.07)",
+          "oklch(26% 0.03487 87.07)",
+          "oklch(38% 0.03487 87.07)",
+          "oklch(49% 0.03487 87.07)",
+          "oklch(61% 0.03487 87.07)",
+          "oklch(72% 0.03487 87.07)",
+          "oklch(84% 0.03487 87.07)",
+          "oklch(95% 0.03487 87.07)"
+        ]
+      },
+      "low": {
+        "role": "secondary",
+        "displayName": "Low",
+        "tonalRamp": [
+          "oklch(15% 0.07988 157.43)",
+          "oklch(26% 0.07988 157.43)",
+          "oklch(38% 0.07988 157.43)",
+          "oklch(49% 0.07988 157.43)",
+          "oklch(61% 0.07988 157.43)",
+          "oklch(72% 0.07988 157.43)",
+          "oklch(84% 0.07988 157.43)",
+          "oklch(95% 0.07988 157.43)"
+        ]
+      },
+      "low-bg": {
+        "role": "secondary",
+        "displayName": "Low Bg",
+        "tonalRamp": [
+          "oklch(15% 0.01695 145.44)",
+          "oklch(26% 0.01695 145.44)",
+          "oklch(38% 0.01695 145.44)",
+          "oklch(49% 0.01695 145.44)",
+          "oklch(61% 0.01695 145.44)",
+          "oklch(72% 0.01695 145.44)",
+          "oklch(84% 0.01695 145.44)",
+          "oklch(95% 0.01695 145.44)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Título de página."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Destaque principal."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Seções e painéis."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Texto base e explicações."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Etiquetas de estado."
+      }
+    },
+    "shadows": [
+      {
+        "name": "toast",
+        "value": "0 5px 18px #153a4229",
+        "purpose": "Separar a notificação fixa do conteúdo."
+      }
+    ],
+    "motion": [
+      {
+        "name": "color-transition",
+        "value": ".16s",
+        "purpose": "Transição de fundo e cor em links e botões."
+      },
+      {
+        "name": "arrival",
+        "value": ".28s cubic-bezier(.16,1,.3,1)",
+        "purpose": "Entrada discreta; desativada com movimento reduzido."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "large",
+        "value": "1600px"
+      },
+      {
+        "name": "compact-desktop",
+        "value": "1100px"
+      },
+      {
+        "name": "mobile",
+        "value": "760px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Ação primary com rótulo explícito.",
+      "html": "<button class=\"ds-button-primary\">Registrar ocorrência</button>",
+      "css": ".ds-button-primary{font-family:var(--font,Segoe UI,Arial,sans-serif);display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:10px 18px;border:0;border-radius:7px;background:var(--accent,#b54728);color:var(--surface,#fff);font-size:14px;font-weight:600;text-align:center;cursor:pointer;transition:background-color .16s,color .16s} .ds-button-primary:hover{background:var(--accent-hover,#94371f)} .ds-button-primary:focus-visible{outline:3px solid var(--accent,#b54728);outline-offset:4px} .ds-button-primary:disabled{opacity:.55;cursor:not-allowed} @media(prefers-reduced-motion:reduce){.ds-button-primary{transition:none}}"
+    },
+    {
+      "name": "Secondary button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Ação secondary com rótulo explícito.",
+      "html": "<button class=\"ds-button-secondary\">Registrar ocorrência</button>",
+      "css": ".ds-button-secondary{font-family:var(--font,Segoe UI,Arial,sans-serif);display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:10px 18px;border:0;border-radius:7px;background:var(--soft,#e8eeea);color:var(--ink,#153a42);font-size:14px;font-weight:600;text-align:center;cursor:pointer;transition:background-color .16s,color .16s} .ds-button-secondary:hover{background:#d6e2dc} .ds-button-secondary:focus-visible{outline:3px solid var(--accent,#b54728);outline-offset:4px} .ds-button-secondary:disabled{opacity:.55;cursor:not-allowed} @media(prefers-reduced-motion:reduce){.ds-button-secondary{transition:none}}"
+    },
+    {
+      "name": "Quiet button",
+      "kind": "button",
+      "refersTo": "button-quiet",
+      "description": "Ação quiet com rótulo explícito.",
+      "html": "<button class=\"ds-button-quiet\">Registrar ocorrência</button>",
+      "css": ".ds-button-quiet{font-family:var(--font,Segoe UI,Arial,sans-serif);display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:10px 18px;border:1px solid var(--line,#d5dedb);border-radius:7px;background:transparent;color:var(--ink,#153a42);font-size:14px;font-weight:600;text-align:center;cursor:pointer;transition:background-color .16s,color .16s} .ds-button-quiet:hover{background:var(--accent,#b54728)} .ds-button-quiet:focus-visible{outline:3px solid var(--accent,#b54728);outline-offset:4px} .ds-button-quiet:disabled{opacity:.55;cursor:not-allowed} @media(prefers-reduced-motion:reduce){.ds-button-quiet{transition:none}}"
+    },
+    {
+      "name": "Text field",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Campo com rótulo explícito e foco externo.",
+      "html": "<label class=\"ds-field\">Local da ocorrência<input class=\"ds-input\" placeholder=\"Rua ou referência\"></label>",
+      "css": ".ds-field{font-family:var(--font,Segoe UI,Arial,sans-serif);display:flex;flex-direction:column;gap:6px;color:var(--ink,#153a42);font-size:14px;font-weight:600}.ds-input{font-family:var(--font,Segoe UI,Arial,sans-serif);padding:12px 13px;min-height:44px;border:1px solid #9db0aa;border-radius:7px;background:var(--surface,#fff);color:var(--ink,#153a42);font-size:16px;font-weight:400;caret-color:var(--accent,#b54728)}.ds-input::placeholder{color:#677a73;opacity:1}.ds-input:focus-visible{outline:3px solid var(--accent,#b54728);outline-offset:4px}"
+    },
+    {
+      "name": "High severity badge",
+      "kind": "chip",
+      "refersTo": "badge-high",
+      "description": "Indicador textual de gravidade alta.",
+      "html": "<span class=\"ds-badge\">Gravidade alta</span>",
+      "css": ".ds-badge{font-family:var(--font,Segoe UI,Arial,sans-serif);display:inline-block;padding:4px 10px;border-radius:5px;background:var(--high-bg,#fcebe7);color:var(--high,#a52c26);font-size:12px;font-weight:650;line-height:1.55}"
+    },
+    {
+      "name": "Panel",
+      "kind": "card",
+      "refersTo": "panel",
+      "description": "Agrupamento branco sem elevação.",
+      "html": "<section class=\"ds-panel\"><h2>Detalhes do alerta</h2><p>Confira a gravidade e a confiança das informações.</p></section>",
+      "css": ".ds-panel{font-family:var(--font,Segoe UI,Arial,sans-serif);padding:28px;border-radius:var(--radius,14px);background:var(--surface,#fff);color:var(--ink,#153a42);line-height:1.55}.ds-panel h2{font-size:20px;margin:0 0 16px}.ds-panel p{font-size:14px;color:var(--muted,#52656b);max-width:72ch}@media(max-width:760px){.ds-panel{padding:22px}}"
+    },
+    {
+      "name": "Navigation",
+      "kind": "nav",
+      "refersTo": "navigation-active",
+      "description": "Navegação textual com item ativo e ícone SVG de traço.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Principal\"><a class=\"ds-active\" href=\"#visao\" aria-current=\"page\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" aria-hidden=\"true\"><path d=\"M3 10 12 3l9 7v11h-6v-7H9v7H3z\"/></svg>Visão geral</a><a href=\"#alertas\">Alertas</a></nav>",
+      "css": ".ds-nav{font-family:var(--font,Segoe UI,Arial,sans-serif);display:flex;flex-direction:column;gap:6px;padding:20px;background:var(--ink,#153a42)}.ds-nav a{display:flex;gap:12px;align-items:center;padding:12px 14px;border-radius:8px;color:#d4e0de;text-decoration:none;font-size:14px;line-height:1.55;transition:background-color .16s,color .16s}.ds-nav a:hover{background:#254d54}.ds-nav a.ds-active{background:var(--surface,#fff);color:var(--ink,#153a42);font-weight:650}.ds-nav a:focus-visible{outline:3px solid var(--accent,#b54728);outline-offset:4px}@media(max-width:760px){.ds-nav{flex-direction:row;overflow:auto;gap:4px}.ds-nav a{flex:0 0 auto;padding:10px 12px;min-height:44px}}@media(prefers-reduced-motion:reduce){.ds-nav a{transition:none}}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Boletim de bairro legível",
+    "overview": "Uma linguagem de boletim urbano: superfícies claras, tinta azul-petróleo, divisórias precisas e ações em terracota. A tipografia humanista de sistema mantém títulos, explicações e dados legíveis sem depender de fontes externas.\n\nA composição usa agrupamentos espaçosos e listas compactas. Gravidade e confiança recebem rótulos explícitos; cores reforçam a leitura, enquanto textos e ícones SVG de traço preservam o significado.",
+    "keyCharacteristics": [
+      "Superfícies claras e navegação azul-petróleo.",
+      "Segoe UI com números tabulares.",
+      "Etiquetas textuais para gravidade e confiança.",
+      "Colunas que se empilham e navegação horizontal no celular."
+    ],
+    "rules": [
+      {
+        "name": "The Estado com Texto Rule",
+        "body": "Toda cor semântica deve acompanhar um rótulo legível que identifica o estado e sua dimensão.",
+        "section": "colors"
+      }
+    ],
+    "dos": [
+      "Do manter rótulos explícitos junto aos estados de gravidade e confiança.",
+      "Do preservar foco visível e alvos principais com altura mínima de 44px.",
+      "Do usar ícones SVG de traço junto a textos de navegação e ações.",
+      "Do verificar a composição a partir de 360px e respeitar movimento reduzido."
+    ],
+    "donts": [
+      "Don't representar gravidade ou confiança somente por cor.",
+      "Don't substituir Segoe UI por uma fonte externa sem revisar o sistema.",
+      "Don't aplicar sombras a todos os painéis: o relevo observado pertence ao toast.",
+      "Don't manter colunas fixas ou ocultar os textos de navegação no celular."
+    ]
+  }
+}

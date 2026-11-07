@@ -4,6 +4,8 @@ Protótipo acadêmico da Global Solution 2026.2 de Engenharia de Software, tema 
 
 **Todos os dados são fictícios.** Nenhum registro representa uma ocorrência real. O projeto não consulta sensores reais nem emite avisos oficiais.
 
+**[Abrir o protótipo publicado](https://vitorpdb.github.io/GS-eng-software/)** · [Documentação em PDF](docs/radar-da-mooca-documentacao.pdf)
+
 ## Equipe
 
 | Integrante | RM |
