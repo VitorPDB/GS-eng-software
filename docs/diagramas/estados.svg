@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="760" height="420" preserveAspectRatio="xMinYMin meet" viewBox="0 0 760 420" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="760" height="420"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-420)" style="clip-path: url(#clip)">
+		<g transform="">
+			<rect x="55" y="305" width="125" height="45" rx="6" ry="6" style="stroke: rgb(78%,83%,81%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(92%,96%,94%); fill-rule: evenodd;"/>
+			<text x="96.0318359375" y="324.43333333333334" style="font-family: Arial-Bold; font-size: 9.2px;fill: rgb(8%,20%,18%); stroke:none;" transform="translate(0,648) scale(1,-1)">reportado</text>
+			<rect x="245" y="305" width="130" height="45" rx="6" ry="6" style="stroke: rgb(78%,83%,81%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(92%,96%,94%); fill-rule: evenodd;"/>
+			<text x="279.8259765625" y="324.43333333333334" style="font-family: Arial-Bold; font-size: 9.2px;fill: rgb(8%,20%,18%); stroke:none;" transform="translate(0,648) scale(1,-1)">em_validacao</text>
+			<rect x="450" y="305" width="125" height="45" rx="6" ry="6" style="stroke: rgb(78%,83%,81%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(92%,96%,94%); fill-rule: evenodd;"/>
+			<text x="487.45380859375" y="324.43333333333334" style="font-family: Arial-Bold; font-size: 9.2px;fill: rgb(8%,20%,18%); stroke:none;" transform="translate(0,648) scale(1,-1)">confirmado</text>
+			<rect x="630" y="305" width="125" height="45" rx="6" ry="6" style="stroke: rgb(78%,83%,81%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(92%,96%,94%); fill-rule: evenodd;"/>
+			<text x="661.3107421875" y="324.43333333333334" style="font-family: Arial-Bold; font-size: 9.2px;fill: rgb(8%,20%,18%); stroke:none;" transform="translate(0,648) scale(1,-1)">alerta_emitido</text>
+			<rect x="525" y="117" width="160" height="48" rx="6" ry="6" style="stroke: rgb(78%,83%,81%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(92%,96%,94%); fill-rule: evenodd;"/>
+			<text x="562.315234375" y="137.93333333333334" style="font-family: Arial-Bold; font-size: 9.2px;fill: rgb(8%,20%,18%); stroke:none;" transform="translate(0,275) scale(1,-1)">em_monitoramento</text>
+			<rect x="280" y="117" width="130" height="48" rx="6" ry="6" style="stroke: rgb(78%,83%,81%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(92%,96%,94%); fill-rule: evenodd;"/>
+			<text x="322.75693359375" y="137.93333333333334" style="font-family: Arial-Bold; font-size: 9.2px;fill: rgb(8%,20%,18%); stroke:none;" transform="translate(0,275) scale(1,-1)">encerrado</text>
+			<rect x="75" y="100" width="130" height="45" rx="6" ry="6" style="stroke: rgb(78%,83%,81%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(92%,96%,94%); fill-rule: evenodd;"/>
+			<text x="115.45693359375" y="119.43333333333334" style="font-family: Arial-Bold; font-size: 9.2px;fill: rgb(8%,20%,18%); stroke:none;" transform="translate(0,238) scale(1,-1)">descartado</text>
+			<circle cx="18" cy="328" r="6" style="stroke: rgb(8%,20%,18%); stroke-linecap: butt; stroke-width: 1; fill: rgb(8%,20%,18%); fill-rule: evenodd;"/>
+			<path d="M 24,328 L 55,328 Z" style="stroke: rgb(7%,47%,42%); stroke-linecap: butt; stroke-width: 1;"/>
+			<polygon points="55 328, 49.59732 330.6098, 49.59732 325.3902" style="stroke: rgb(7%,47%,42%); stroke-linecap: butt; stroke-width: 1; fill: rgb(7%,47%,42%); fill-rule: evenodd;"/>
+			<text x="38.477099609375" y="368.0" style="font-family: Arial; font-size: 8.2px;fill: rgb(8%,20%,18%); stroke:none;" transform="translate(0,736) scale(1,-1)">registro válido</text>
+			<path d="M 180,328 L 245,328 Z" style="stroke: rgb(7%,47%,42%); stroke-linecap: butt; stroke-width: 1;"/>
+			<polygon points="245 328, 239.5973 330.6098, 239.5973 325.3902" style="stroke: rgb(7%,47%,42%); stroke-linecap: butt; stroke-width: 1; fill: rgb(7%,47%,42%); fill-rule: evenodd;"/>
+			<text x="186.4375" y="343" style="font-family: Arial; font-size: 8px;fill: rgb(8%,20%,18%); stroke:none;" transform="translate(0,686) scale(1,-1)">iniciar / motivo</text>
+			<path d="M 375,328 L 450,328 Z" style="stroke: rgb(7%,47%,42%); stroke-linecap: butt; stroke-width: 1;"/>
+			<polygon points="450 328, 444.5973 330.6098, 444.5973 325.3902" style="stroke: rgb(7%,47%,42%); stroke-linecap: butt; stroke-width: 1; fill: rgb(7%,47%,42%); fill-rule: evenodd;"/>
+			<text x="393.330078125" y="348" style="font-family: Arial; font-size: 8px;fill: rgb(8%,20%,18%); stroke:none;" transform="translate(0,696) scale(1,-1)">confirmar</text>
+			<text x="373.0303955078125" y="292.0" style="font-family: Arial; font-size: 7.9px;fill: rgb(8%,20%,18%); stroke:none;" transform="translate(0,584) scale(1,-1)">[motivo + fonte fresca]</text>
+			<text x="387.9586181640625" y="281.1" style="font-family: Arial; font-size: 7.9px;fill: rgb(8%,20%,18%); stroke:none;" transform="translate(0,562) scale(1,-1)">/ verified=true</text>
+			<path d="M 575,328 L 630,328 Z" style="stroke: rgb(7%,47%,42%); stroke-linecap: butt; stroke-width: 1;"/>
+			<polygon points="630 328, 624.5973 330.6098, 624.5973 325.3902" style="stroke: rgb(7%,47%,42%); stroke-linecap: butt; stroke-width: 1; fill: rgb(7%,47%,42%); fill-rule: evenodd;"/>
+			<text x="587.9921875" y="343" style="font-family: Arial; font-size: 8px;fill: rgb(8%,20%,18%); stroke:none;" transform="translate(0,686) scale(1,-1)">publicar</text>
+			<text x="586.1875" y="275" style="font-family: Arial; font-size: 8px;fill: rgb(8%,20%,18%); stroke:none;" transform="translate(0,550) scale(1,-1)">[fonte fresca; confiança &gt;= 50;</text>
+			<text x="603.759765625" y="264" style="font-family: Arial; font-size: 8px;fill: rgb(8%,20%,18%); stroke:none;" transform="translate(0,528) scale(1,-1)">risco moderado/alto]</text>
+			<text x="594.638671875" y="253" style="font-family: Arial; font-size: 8px;fill: rgb(8%,20%,18%); stroke:none;" transform="translate(0,506) scale(1,-1)">/ notificação interna única</text>
+			<path d="M 117,305 L 117,145 Z" style="stroke: rgb(7%,47%,42%); stroke-linecap: butt; stroke-width: 1;"/>
+			<polygon points="117 145, 119.6098 150.4027, 114.3902 150.4027" style="stroke: rgb(7%,47%,42%); stroke-linecap: butt; stroke-width: 1; fill: rgb(7%,47%,42%); fill-rule: evenodd;"/>
+			<text x="52.326171875" y="230" style="font-family: Arial; font-size: 8px;fill: rgb(8%,20%,18%); stroke:none;" transform="translate(0,460) scale(1,-1)">descartar</text>
+			<text x="54.99609375" y="219" style="font-family: Arial; font-size: 8px;fill: rgb(8%,20%,18%); stroke:none;" transform="translate(0,438) scale(1,-1)">[motivo]</text>
+			<path d="M 310,305 L 310,210 Z" style="stroke: rgb(7%,47%,42%); stroke-linecap: butt; stroke-width: 1;"/>
+			<path d="M 310,210 L 175,210 Z" style="stroke: rgb(7%,47%,42%); stroke-linecap: butt; stroke-width: 1;"/>
+			<path d="M 175,210 L 175,145 Z" style="stroke: rgb(7%,47%,42%); stroke-linecap: butt; stroke-width: 1;"/>
+			<polygon points="175 145, 177.6098 150.4027, 172.3902 150.4027" style="stroke: rgb(7%,47%,42%); stroke-linecap: butt; stroke-width: 1; fill: rgb(7%,47%,42%); fill-rule: evenodd;"/>
+			<text x="248.2109375" y="225" style="font-family: Arial; font-size: 8px;fill: rgb(8%,20%,18%); stroke:none;" transform="translate(0,450) scale(1,-1)">descartar [motivo]</text>
+			<path d="M 512,305 L 512,220 Z" style="stroke: rgb(7%,47%,42%); stroke-linecap: butt; stroke-width: 1;"/>
+			<path d="M 512,220 L 605,220 Z" style="stroke: rgb(7%,47%,42%); stroke-linecap: butt; stroke-width: 1;"/>
+			<path d="M 605,220 L 605,165 Z" style="stroke: rgb(7%,47%,42%); stroke-linecap: butt; stroke-width: 1;"/>
+			<polygon points="605 165, 607.6098 170.4027, 602.3902 170.4027" style="stroke: rgb(7%,47%,42%); stroke-linecap: butt; stroke-width: 1; fill: rgb(7%,47%,42%); fill-rule: evenodd;"/>
+			<text x="506.310546875" y="239" style="font-family: Arial; font-size: 8px;fill: rgb(8%,20%,18%); stroke:none;" transform="translate(0,478) scale(1,-1)">acompanhar [risco baixo]</text>
+			<text x="536.99609375" y="228" style="font-family: Arial; font-size: 8px;fill: rgb(8%,20%,18%); stroke:none;" transform="translate(0,456) scale(1,-1)">/ motivo</text>
+			<path d="M 692,305 L 735,248 Z" style="stroke: rgb(7%,47%,42%); stroke-linecap: butt; stroke-width: 1;"/>
+			<path d="M 735,248 L 735,141 Z" style="stroke: rgb(7%,47%,42%); stroke-linecap: butt; stroke-width: 1;"/>
+			<path d="M 735,141 L 685,141 Z" style="stroke: rgb(7%,47%,42%); stroke-linecap: butt; stroke-width: 1;"/>
+			<polygon points="685 141, 690.4027 138.3902, 690.4027 143.6098" style="stroke: rgb(7%,47%,42%); stroke-linecap: butt; stroke-width: 1; fill: rgb(7%,47%,42%); fill-rule: evenodd;"/>
+			<text x="675.763671875" y="194" style="font-family: Arial; font-size: 8px;fill: rgb(8%,20%,18%); stroke:none;" transform="translate(0,388) scale(1,-1)">acompanhar</text>
+			<text x="683.99609375" y="183" style="font-family: Arial; font-size: 8px;fill: rgb(8%,20%,18%); stroke:none;" transform="translate(0,366) scale(1,-1)">/ motivo</text>
+			<path d="M 525,141 L 410,141 Z" style="stroke: rgb(7%,47%,42%); stroke-linecap: butt; stroke-width: 1;"/>
+			<polygon points="410 141, 415.4027 138.3902, 415.4027 143.6098" style="stroke: rgb(7%,47%,42%); stroke-linecap: butt; stroke-width: 1; fill: rgb(7%,47%,42%); fill-rule: evenodd;"/>
+			<text x="436.990234375" y="158" style="font-family: Arial; font-size: 8px;fill: rgb(8%,20%,18%); stroke:none;" transform="translate(0,316) scale(1,-1)">encerrar / motivo</text>
+			<circle cx="228" cy="141" r="8" style="stroke: rgb(8%,20%,18%); stroke-linecap: butt; stroke-width: 1; fill: none; fill-rule: evenodd;"/>
+			<circle cx="228" cy="141" r="5" style="stroke: rgb(8%,20%,18%); stroke-linecap: butt; stroke-width: 1; fill: rgb(8%,20%,18%); fill-rule: evenodd;"/>
+			<path d="M 280,141 L 237,141 Z" style="stroke: rgb(7%,47%,42%); stroke-linecap: butt; stroke-width: 1;"/>
+			<polygon points="237 141, 242.4027 138.3902, 242.4027 143.6098" style="stroke: rgb(7%,47%,42%); stroke-linecap: butt; stroke-width: 1; fill: rgb(7%,47%,42%); fill-rule: evenodd;"/>
+			<circle cx="140" cy="55" r="8" style="stroke: rgb(8%,20%,18%); stroke-linecap: butt; stroke-width: 1; fill: none; fill-rule: evenodd;"/>
+			<circle cx="140" cy="55" r="5" style="stroke: rgb(8%,20%,18%); stroke-linecap: butt; stroke-width: 1; fill: rgb(8%,20%,18%); fill-rule: evenodd;"/>
+			<path d="M 140,100 L 140,64 Z" style="stroke: rgb(7%,47%,42%); stroke-linecap: butt; stroke-width: 1;"/>
+			<polygon points="140 64, 142.6098 69.40268, 137.3902 69.40268" style="stroke: rgb(7%,47%,42%); stroke-linecap: butt; stroke-width: 1; fill: rgb(7%,47%,42%); fill-rule: evenodd;"/>
+			<text x="252" y="55.0" style="font-family: Arial; font-size: 8.4px;fill: rgb(8%,20%,18%); stroke:none;" transform="translate(0,110) scale(1,-1)">Fresca: idade entre 0 e 30 minutos, inclusive. Todas as mudanças exigem motivo.</text>
+			<text x="252" y="36.0" style="font-family: Arial; font-size: 8.4px;fill: rgb(8%,20%,18%); stroke:none;" transform="translate(0,72) scale(1,-1)">Estados terminais não reabrem. Transições não previstas são recusadas.</text>
+			<text x="252" y="17.0" style="font-family: Arial; font-size: 8.4px;fill: rgb(8%,20%,18%); stroke:none;" transform="translate(0,34) scale(1,-1)">Dados e papéis simulados; não representa protocolo oficial de emergência.</text>
+		</g>
+	</g>
+</svg>

@@ -1,0 +1,44 @@
+@startuml
+title Radar da Mooca - sequência do alerta simulado
+actor "Fonte simulada / Morador" as F
+actor "Agente (perfil demonstrativo)" as G
+boundary "UI / Controller" as UI
+control "Plataforma / Application" as APP
+entity "Rules / Domain" as D
+database "Repository local" as R
+F -> UI: informar ocorrência fictícia
+UI -> APP: createReport(input)
+APP -> D: validateReport(input)
+alt entrada inválida
+D --> APP: erro de validação
+APP --> UI: exibir erro, sem gravar
+else entrada válida
+D --> APP: dados válidos
+APP -> R: save(reportado, fonte comunidade)
+APP --> UI: protocolo e confiança inicial
+end
+G -> UI: iniciar validação + motivo
+UI -> APP: transition(em_validacao, motivo)
+APP -> D: validateTransition(...)
+APP -> R: save(estado, histórico)
+opt adicionar evidência simulada
+G -> UI: adicionar sensor/base fictícios
+UI -> APP: addDemoSource(tipo)
+APP -> R: save(fontes fictícias)
+end
+G -> UI: confirmar + motivo
+UI -> APP: transition(confirmado, motivo)
+APP -> D: validar motivo e fonte fresca
+APP -> R: save(verified=true, histórico)
+G -> UI: publicar alerta
+UI -> APP: transition(alerta_emitido, motivo)
+APP -> D: calculateEvent + validateTransition
+alt confirmado e fonte fresca e confiança>=50 e risco moderado/alto
+APP -> APP: gerar notificação interna única
+APP -> R: save(evento + notificação + histórico)
+APP --> UI: alerta e central atualizados
+else condição não atendida
+APP --> UI: informar bloqueio sem alterar estado
+end
+note over F,R: Dados simulados; sem API externa, SMS, e-mail ou autenticação real.
+@enduml

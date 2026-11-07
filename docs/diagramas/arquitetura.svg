@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="760" height="420" preserveAspectRatio="xMinYMin meet" viewBox="0 0 760 420" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="760" height="420"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-420)" style="clip-path: url(#clip)">
+		<g transform="">
+			<rect x="5" y="300" width="165" height="105" rx="6" ry="6" style="stroke: rgb(78%,83%,81%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(92%,96%,94%); fill-rule: evenodd;"/>
+			<text x="27.743164062499993" y="369.0" style="font-family: Arial-Bold; font-size: 9px;fill: rgb(8%,20%,18%); stroke:none;" transform="translate(0,738) scale(1,-1)">FONTES REPRESENTADAS</text>
+			<text x="47.97998046874999" y="356.0" style="font-family: Arial; font-size: 9px;fill: rgb(8%,20%,18%); stroke:none;" transform="translate(0,712) scale(1,-1)">Comunidade fictícia</text>
+			<text x="45.98046874999999" y="343.0" style="font-family: Arial; font-size: 9px;fill: rgb(8%,20%,18%); stroke:none;" transform="translate(0,686) scale(1,-1)">Sensor/base fictícios</text>
+			<text x="42.72631835937499" y="330.0" style="font-family: Arial; font-size: 9px;fill: rgb(8%,20%,18%); stroke:none;" transform="translate(0,660) scale(1,-1)">Dados pré-carregados</text>
+			<rect x="220" y="345" width="535" height="65" rx="6" ry="6" style="stroke: rgb(78%,83%,81%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(92%,96%,94%); fill-rule: evenodd;"/>
+			<text x="426.66015625" y="388.1666666666667" style="font-family: Arial-Bold; font-size: 10px;fill: rgb(8%,20%,18%); stroke:none;" transform="translate(0,776) scale(1,-1)">APRESENTAÇÃO - app.js</text>
+			<text x="371.19873046875" y="374.1666666666667" style="font-family: Arial; font-size: 10px;fill: rgb(8%,20%,18%); stroke:none;" transform="translate(0,748) scale(1,-1)">UI/controller + views T01-T08; composição e injeção</text>
+			<text x="363.2763671875" y="360.1666666666667" style="font-family: Arial; font-size: 10px;fill: rgb(8%,20%,18%); stroke:none;" transform="translate(0,720) scale(1,-1)">Campos mínimos; localização aproximada; texto seguro</text>
+			<rect x="220" y="240" width="535" height="65" rx="6" ry="6" style="stroke: rgb(78%,83%,81%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(92%,96%,94%); fill-rule: evenodd;"/>
+			<text x="433.3349609375" y="283.1666666666667" style="font-family: Arial-Bold; font-size: 10px;fill: rgb(8%,20%,18%); stroke:none;" transform="translate(0,566) scale(1,-1)">APLICAÇÃO - platform</text>
+			<text x="362.7099609375" y="269.1666666666667" style="font-family: Arial; font-size: 10px;fill: rgb(8%,20%,18%); stroke:none;" transform="translate(0,538) scale(1,-1)">Casos de uso: registro, validação, publicação e histórico</text>
+			<text x="345.76416015625" y="255.16666666666669" style="font-family: Arial; font-size: 10px;fill: rgb(8%,20%,18%); stroke:none;" transform="translate(0,510) scale(1,-1)">Gera notificação interna; recebe repository, seedFactory e clock</text>
+			<rect x="220" y="135" width="535" height="65" rx="6" ry="6" style="stroke: rgb(78%,83%,81%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(92%,96%,94%); fill-rule: evenodd;"/>
+			<text x="449.16259765625" y="178.16666666666666" style="font-family: Arial-Bold; font-size: 10px;fill: rgb(8%,20%,18%); stroke:none;" transform="translate(0,356) scale(1,-1)">DOMÍNIO - rules</text>
+			<text x="404.4091796875" y="164.16666666666666" style="font-family: Arial; font-size: 10px;fill: rgb(8%,20%,18%); stroke:none;" transform="translate(0,328) scale(1,-1)">Risco, confiança, frescor e transições</text>
+			<text x="371.06201171875" y="150.16666666666666" style="font-family: Arial; font-size: 10px;fill: rgb(8%,20%,18%); stroke:none;" transform="translate(0,300) scale(1,-1)">Sem DOM, localStorage ou imports da infraestrutura</text>
+			<rect x="220" y="30" width="535" height="65" rx="6" ry="6" style="stroke: rgb(78%,83%,81%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(92%,96%,94%); fill-rule: evenodd;"/>
+			<text x="419.16748046875" y="73.16666666666667" style="font-family: Arial-Bold; font-size: 10px;fill: rgb(8%,20%,18%); stroke:none;" transform="translate(0,146) scale(1,-1)">INFRAESTRUTURA / DADOS</text>
+			<text x="363.5546875" y="59.16666666666667" style="font-family: Arial; font-size: 10px;fill: rgb(8%,20%,18%); stroke:none;" transform="translate(0,118) scale(1,-1)">Repository: localStorage com contingência em memória</text>
+			<text x="367.99560546875" y="45.16666666666667" style="font-family: Arial; font-size: 10px;fill: rgb(8%,20%,18%); stroke:none;" transform="translate(0,90) scale(1,-1)">Seed: fontes e eventos fictícios; sem conectores reais</text>
+			<path d="M 170,360 L 220,377 Z" style="stroke: rgb(7%,47%,42%); stroke-linecap: butt; stroke-width: 1;"/>
+			<polygon points="220 377, 214.0448 377.7317, 215.725 372.79" style="stroke: rgb(7%,47%,42%); stroke-linecap: butt; stroke-width: 1; fill: rgb(7%,47%,42%); fill-rule: evenodd;"/>
+			<path d="M 487,345 L 487,305 Z" style="stroke: rgb(7%,47%,42%); stroke-linecap: butt; stroke-width: 1;"/>
+			<polygon points="487 305, 489.6098 310.4027, 484.3902 310.4027" style="stroke: rgb(7%,47%,42%); stroke-linecap: butt; stroke-width: 1; fill: rgb(7%,47%,42%); fill-rule: evenodd;"/>
+			<text x="543.3125" y="322" style="font-family: Arial; font-size: 8px;fill: rgb(8%,20%,18%); stroke:none;" transform="translate(0,644) scale(1,-1)">chama casos de uso</text>
+			<path d="M 487,240 L 487,200 Z" style="stroke: rgb(7%,47%,42%); stroke-linecap: butt; stroke-width: 1;"/>
+			<polygon points="487 200, 489.6098 205.4027, 484.3902 205.4027" style="stroke: rgb(7%,47%,42%); stroke-linecap: butt; stroke-width: 1; fill: rgb(7%,47%,42%); fill-rule: evenodd;"/>
+			<text x="544.41796875" y="217" style="font-family: Arial; font-size: 8px;fill: rgb(8%,20%,18%); stroke:none;" transform="translate(0,434) scale(1,-1)">depende das regras</text>
+			<path d="M 225,365 L 191,365 Z" style="stroke: rgb(7%,47%,42%); stroke-linecap: butt; stroke-width: 1; stroke-dasharray: 4, 3;"/>
+			<path d="M 191,365 L 191,62 Z" style="stroke: rgb(7%,47%,42%); stroke-linecap: butt; stroke-width: 1; stroke-dasharray: 4, 3;"/>
+			<path d="M 191,62 L 220,62 Z" style="stroke: rgb(7%,47%,42%); stroke-linecap: butt; stroke-width: 1; stroke-dasharray: 4, 3;"/>
+			<polygon points="220 62, 214.5973 64.60979, 214.5973 59.39021" style="stroke: rgb(7%,47%,42%); stroke-linecap: butt; stroke-width: 1; fill: rgb(7%,47%,42%); fill-rule: evenodd;"/>
+			<text x="182.056298828125" y="239.0" style="font-family: Arial; font-size: 7.8px;fill: rgb(8%,20%,18%); stroke:none;" transform="translate(0,478) scale(1,-1)">cria e injeta</text>
+			<path d="M 755,274 L 759,274 Z" style="stroke: rgb(7%,47%,42%); stroke-linecap: butt; stroke-width: 1; stroke-dasharray: 4, 3;"/>
+			<path d="M 759,274 L 759,63 Z" style="stroke: rgb(7%,47%,42%); stroke-linecap: butt; stroke-width: 1; stroke-dasharray: 4, 3;"/>
+			<path d="M 759,63 L 755,63 Z" style="stroke: rgb(7%,47%,42%); stroke-linecap: butt; stroke-width: 1; stroke-dasharray: 4, 3;"/>
+			<polygon points="755 63, 760.4027 60.39021, 760.4027 65.60979" style="stroke: rgb(7%,47%,42%); stroke-linecap: butt; stroke-width: 1; fill: rgb(7%,47%,42%); fill-rule: evenodd;"/>
+			<text x="594.929296875" y="109.0" style="font-family: Arial; font-size: 8.2px;fill: rgb(8%,20%,18%); stroke:none;" transform="translate(0,218) scale(1,-1)">load/save por contrato injetado</text>
+			<rect x="5" y="30" width="165" height="155" rx="6" ry="6" style="stroke: rgb(78%,83%,81%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(96%,94%,90%); fill-rule: evenodd;"/>
+			<text x="42.25170898437499" y="137.0" style="font-family: Arial-Bold; font-size: 9px;fill: rgb(8%,20%,18%); stroke:none;" transform="translate(0,274) scale(1,-1)">EVOLUÇÃO FUTURA</text>
+			<text x="49.72900390624999" y="124.0" style="font-family: Arial; font-size: 9px;fill: rgb(8%,20%,18%); stroke:none;" transform="translate(0,248) scale(1,-1)">Não implementada</text>
+			<text x="62.98291015625" y="111.0" style="font-family: Arial; font-size: 9px;fill: rgb(8%,20%,18%); stroke:none;" transform="translate(0,222) scale(1,-1)">API e banco</text>
+			<text x="36.96728515624999" y="98.0" style="font-family: Arial; font-size: 9px;fill: rgb(8%,20%,18%); stroke:none;" transform="translate(0,196) scale(1,-1)">Autenticação/autorização</text>
+			<text x="44.47973632812499" y="85.0" style="font-family: Arial; font-size: 9px;fill: rgb(8%,20%,18%); stroke:none;" transform="translate(0,170) scale(1,-1)">Monitoramento e filas</text>
+			<text x="42.22314453124999" y="72.0" style="font-family: Arial; font-size: 9px;fill: rgb(8%,20%,18%); stroke:none;" transform="translate(0,144) scale(1,-1)">conforme necessidade</text>
+			<text x="8" y="9.0" style="font-family: Arial; font-size: 8.5px;fill: rgb(8%,20%,18%); stroke:none;" transform="translate(0,18) scale(1,-1)">A aplicação não importa infraestrutura. Notificações locais; sem SMS/e-mail. Perfis apenas demonstrativos.</text>
+		</g>
+	</g>
+</svg>

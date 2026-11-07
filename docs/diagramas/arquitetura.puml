@@ -1,0 +1,41 @@
+@startuml
+title Radar da Mooca - arquitetura implementada
+package "Fontes representadas - simuladas" {
+  component "Comunidade fictícia" as Community
+  component "Sensor e base pública fictícios" as Sources
+}
+package "Apresentação" {
+  component "app.js: UI/controller + views
+T01-T08; composição" as UI
+}
+package "Aplicação" {
+  component "Platform: casos de uso
+registro, validação, publicação
+notificação interna e histórico" as App
+}
+package "Domínio" {
+  component "Rules: risco, confiança, frescor
+transições e validações" as Rules
+}
+package "Infraestrutura / dados" {
+  database "Repository: localStorage
+contingência em memória" as Repo
+  component "seedFactory: fontes e eventos fictícios" as Seed
+}
+Community --> UI : entrada demonstrativa
+Sources --> Seed : dados pré-carregados
+UI --> App : chama casos de uso
+UI ..> Repo : cria e injeta
+UI ..> Seed : injeta seedFactory
+App --> Rules : regras
+App --> Repo : contrato injetado load/save
+App --> Seed : função injetada
+note right of Rules: Domínio sem DOM ou armazenamento.
+Aplicação sem importar infraestrutura.
+note bottom of Repo: Minimização: localização aproximada e sem identidade do relator.
+Nenhuma integração urbana real ou canal externo de notificação.
+package "Evolução futura - não implementada" {
+  component "API, autenticação/autorização, banco,
+monitoramento e fila conforme necessidade" as Future
+}
+@enduml
